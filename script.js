@@ -6,6 +6,13 @@ const h3CartaoNome = document.getElementById('cartao-nome');
 console.log(alterarNome);
 console.log(h3CartaoNome);
 
+alterarNome.addEventListener('input', function() {
+    h3CartaoNome.textContent = alterarNome.value;
+});
+
+
+
+
 
 /*1. **Alterar o Nome:**
     - Selecione o campo de input `#nome-input` e o `<h3>` com id `#cartao-nome`.
