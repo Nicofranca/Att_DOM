@@ -45,8 +45,13 @@ const imagem = document.getElementById('imagem-select')
 const imgCartao = document.getElementById('cartao-img')
 
 function novaImg(){
-    imagem.setAttribute('src', '')
+    const imgNova = imagem.value
+    imgCartao.setAttribute('src', imgNova)
 }
+
+imagem.addEventListener('change', novaImg)
+
+
 
 
 /*  4. **Mudar o Ícone:**
