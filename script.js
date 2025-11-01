@@ -52,13 +52,17 @@ function novaImg(){
 imagem.addEventListener('change', novaImg)
 
 
+//Criar e Adicionar Habilidades
+const habilidade = document.getElementById('habilidade-input')
+const adicionar = document.getElementById('btn-adicionar')
+const listaHabilidade = document.getElementById('lista-habilidades')
+
+function btnAdicionar(){
+    adicionar.addEventListene
+}
 
 
-/*  4. **Mudar o Ícone:**
-    - Selecione o `<select>` com id `#imagem-select` e a imagem `#cartao-img`.
-    - Adicione um evento `change` ao `<select>`. Quando o usuário escolher uma nova opção, use `setAttribute()` para mudar o `src` da imagem para o valor da opção selecionada.
-
-    5. **Criar e Adicionar Habilidades:**
+/*  5. **Criar e Adicionar Habilidades:**
     - Selecione o input `#habilidade-input`, o botão `#btn-adicionar` e a lista `<ul>` com id `#lista-habilidades`.
     - Adicione um evento de `click` ao botão `#btn-adicionar`.
     - Dentro do evento, crie um novo elemento `<li>` com `document.createElement()`.
