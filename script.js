@@ -17,13 +17,13 @@ const btnAzul = document.getElementById('btn-azul')
 const btnVerde = document.getElementById('btn-verde')
 
 function alterarCorAzul(){
-    cartao.classList.remove('btn-azul')
-    cartao.style.background = 'Blue'
+    cartao.classList.remove('fundo-verde')
+    cartao.classList.add('fundo-azul')
 }
 
 function alterarCorVerde(){
-    cartao.classList.remove('btn-verde')
-    cartao.style.background = 'Green'
+    cartao.classList.remove('fundo-azul')
+    cartao.classList.add('fundo-verde')
 }
 
 btnAzul.addEventListener('click', alterarCorAzul)
@@ -31,18 +31,25 @@ btnVerde.addEventListener('click', alterarCorVerde)
 
 
 //Alternar o Estilo da Fonte
+const fonte = document.getElementById('btn-fonte')
+
+function alterarFonte(){
+    cartao.classList.toggle('fonte-alternativa')
+}
+
+fonte.addEventListener('click', alterarFonte);
 
 
+//Mudar Icone
+const imagem = document.getElementById('imagem-select')
+const imgCartao = document.getElementById('cartao-img')
 
-/*    3. **Alternar o Estilo da Fonte:**
-    - Selecione o botão `#btn-fonte`.
-    - Adicione um evento de `click` que usa `classList.toggle()` para adicionar/remover a classe `fonte-alternativa` do cartão.
+function novaImg(){
+    imagem.setAttribute('src', '')
+}
 
 
-
-
-
-    4. **Mudar o Ícone:**
+/*  4. **Mudar o Ícone:**
     - Selecione o `<select>` com id `#imagem-select` e a imagem `#cartao-img`.
     - Adicione um evento `change` ao `<select>`. Quando o usuário escolher uma nova opção, use `setAttribute()` para mudar o `src` da imagem para o valor da opção selecionada.
 
