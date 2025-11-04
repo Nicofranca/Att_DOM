@@ -40,7 +40,7 @@ function alterarFonte(){
 fonte.addEventListener('click', alterarFonte);
 
 
-//Mudar Icone
+//Mudar Icon
 const imagem = document.getElementById('imagem-select')
 const imgCartao = document.getElementById('cartao-img')
 
